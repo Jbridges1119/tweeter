@@ -1,0 +1,33 @@
+nav {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  
+}
+
+.navLogo {
+  margin-left: 1.5em;
+  font-family: 'Bungee', cursive;
+  font-size: 1.5em;
+}
+
+.navNewTweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.5em;
+}
+
+.navWrite {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+}
+
+.fa-solid {
+  color: orangered
+}
+
