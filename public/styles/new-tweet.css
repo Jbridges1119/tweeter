@@ -4,6 +4,7 @@
   border: 0;
   background-color: #f4f1ec;
   width: 100%;
+  resize: none;
 }
 #tweet-text:focus-visible {
   outline: none;
@@ -42,3 +43,4 @@
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
+
