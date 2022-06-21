@@ -11,4 +11,3 @@ $('#tweet-text').on('input', function () {
 
 
 
-// .parents(".new-tweet").children(".counter")
