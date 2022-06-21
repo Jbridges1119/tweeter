@@ -1,3 +1,8 @@
+section.new-tweet {
+  margin-inline: 5px;
+  margin-bottom: 35px;
+}
+
 #tweet-text {
   font-family: 'Source Sans Pro';
   font-weight: 600;
@@ -21,10 +26,16 @@
 }
 .tweetButton:hover {
   color:white;
-  border-color: white;
-  box-shadow: 0 0.15em 0.55em 0.35em #8ECAE6;
+  border-color: #8ECAE6;
+  box-shadow:  0.05em 0.1em 0.0 0 #8ECAE6;
 }
 
+.tweetButton:active {
+  color:white;
+  border-color: #219EBC;
+  box-shadow:  0.05em 0.1em 0.2em 0 #8ECAE6;
+  transform: translateY(0.15em);
+}
 .bottom {
   display: flex;
   flex-direction: row;
