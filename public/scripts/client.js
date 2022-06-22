@@ -22,21 +22,22 @@ $(document).ready(function() {
       "user": {
         "name": "Descartes",
         "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd" },
+        "handle": "@rd"
+      },
       "content": {
         "text": "Je pense , donc je suis"
       },
       "created_at": 1461113959088
     }
-  ]
+  ];
 
 
 
 
-const createTweetElement = function (data) {
-  const $tweet = $(`<article class="oldTweet">
+  const createTweetElement = function(data) {
+    const $tweet = $(`<article class="oldTweet">
   <header>
-    <div class="user"><img src="${data.user.avatars}">Newton</div>
+    <div class="user"><img src="${data.user.avatars}">${data.user.name}</div>
     <div class="userID">${data.user.handle}</div>
   </header>
   <div class="tweetText">
@@ -51,15 +52,14 @@ const createTweetElement = function (data) {
   </div>
   </footer>
 </article>`);
+    return $tweet;
+  };
 
-return $tweet
-};
 
-
-// const renderTweets = function(tweets) {
-//   data.forEach(user => {
-
-//   })
-// }
-
+  const renderTweets = function(data) {
+    data.forEach(person => {
+      $('#tweets-container').append(createTweetElement(person));
+    });
+  };
+  renderTweets(data);
 });
