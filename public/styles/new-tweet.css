@@ -7,16 +7,13 @@ section.new-tweet {
   font-family: 'Source Sans Pro';
   font-weight: 600;
   border: 0;
-  background-color: #f4f1ec;
+  background-color: transparent;
   width: 100%;
   resize: none;
-}
-#tweet-text:focus-visible {
   outline: none;
 }
 
-
-.tweetButton {
+section button {
   color: white;
   background-color: #219EBC;
   border: 2px solid;
@@ -24,34 +21,35 @@ section.new-tweet {
   padding: 5px
   
 }
-.tweetButton:hover {
-  color:white;
+section button:hover {
+  color: white;
   border-color: #8ECAE6;
   box-shadow:  0.05em 0.1em 0.0 0 #8ECAE6;
 }
 
-.tweetButton:active {
-  color:white;
+section button:active {
+  color: white;
   border-color: #219EBC;
   box-shadow:  0.05em 0.1em 0.2em 0 #8ECAE6;
   transform: translateY(0.15em);
 }
-.bottom {
+
+section footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-family: 'Bungee', cursive;
 }
 
-.statement {
+section h2 {
   margin-bottom: 0;
 }
 
-#tweetText {
+section div#tweetText {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   border-bottom: solid;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 

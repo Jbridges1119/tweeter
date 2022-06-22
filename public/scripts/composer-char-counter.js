@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 $('#tweet-text').on('input', function () {
   const $length = $(this).val().length
   if ($length > 140) {
@@ -7,6 +8,7 @@ $('#tweet-text').on('input', function () {
   $(this).parents(".new-tweet").find(".counter").text(140 - $length).css('color', '#545149')
   }
 });
+
 });
 
 

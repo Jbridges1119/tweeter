@@ -13,15 +13,33 @@ article.oldTweet header {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+align-items: center;
 margin:30px;
 }
 
-article.oldTweet div {
+article.oldTweet header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+}
+
+article.oldTweet header div img{
+padding-right: 1rem
+}
+
+article.oldTweet div.tweetText {
   margin-left: 10px;
   margin-right: 10px;
   border-bottom: solid;
   font-weight: 600 ;
   font-size: .9em;
+}
+
+article.oldTweet div p {
+  margin-left: 30px;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 article.oldTweet footer {
@@ -31,13 +49,16 @@ article.oldTweet footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+article.oldTweet footer div.icons {
+  display: flex;
+  flex-direction: row;
+  
 }
 
-
-
 article.oldTweet i {
-  margin: 5px;
-  margin-top:15px;
+  margin: 7px;
   color:#219EBC
 }
 
@@ -45,13 +66,12 @@ article.oldTweet i:hover {
   color: #ffb703;
 }
 
-article.oldTweet div p {
-  margin-left: 25px;
-  flex-direction: row;
-  justify-content: space-around;
+article.oldTweet i:active {
+  color: #ffb703;
+  transform: translateY(0.15em);
 }
 
-article.oldTweet .user {
+article.oldTweet .userID {
   font-weight: 600;
   color: #8ECAE6;
 }

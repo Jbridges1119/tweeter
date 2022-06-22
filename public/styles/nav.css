@@ -20,7 +20,7 @@ nav {
   font-size: 1.5em;
 }
 
-.navNewTweet {
+nav div {
   display: flex;
   flex-direction: column;
   align-items: center;
