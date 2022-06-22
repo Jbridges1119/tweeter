@@ -1,6 +1,6 @@
 section.new-tweet {
   margin-inline: 5px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 #tweet-text {
@@ -45,7 +45,7 @@ section h2 {
   margin-bottom: 0;
 }
 
-section div#tweetText {
+section div.tweetText {
   display: flex;
   flex-direction: column;
   border-bottom: solid;

@@ -1,5 +1,5 @@
 article.oldTweet {
-  margin-block:20px;
+  margin-block:40px;
   border: solid;
   display: flex;
   flex-direction: column;
@@ -29,22 +29,26 @@ padding-right: 1rem
 }
 
 article.oldTweet div.tweetText {
+  display: flex;
   margin-left: 10px;
   margin-right: 10px;
   border-bottom: solid;
+  margin-bottom: 0;
   font-weight: 600 ;
   font-size: .9em;
 }
 
 article.oldTweet div p {
-  margin-left: 30px;
+  word-wrap: break-word;
+  margin-inline: 30px;
   flex-direction: row;
   justify-content: space-around;
 }
 
 article.oldTweet footer {
   margin-inline: 40px;
- font-size: medium;
+ font-size: small;
+ font-family: 'Source Sans Pro';
  font-weight: 600;
   display: flex;
   flex-direction: row;
