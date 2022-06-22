@@ -53,3 +53,17 @@ section div.tweetText {
   margin-bottom: 10px;
 }
 
+
+div .alert {
+  padding: 20px;
+  background-color: #c90101b0; 
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+}
+
+span.warning {
+  font-family: 'Bungee', cursive;
+  padding: 1rem
+}
