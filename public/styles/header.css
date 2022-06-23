@@ -1,3 +1,4 @@
+/* VARIABLE LIST*/
 header.display {
   height: 400px;
   width: 100%;
@@ -10,7 +11,7 @@ header.display {
 }
 
 .name {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 

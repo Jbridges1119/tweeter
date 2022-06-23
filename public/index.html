@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/styles/oldTweet.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Jquery UI for bouncing character counter -->
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -52,7 +53,6 @@
     <main class="container">
       <section class="new-tweet"> 
         <div class="tweetText">
-         
         <h2>What are you humming about?</h2>
         <form class="submit" action="/tweets" method="POST">
           <textarea name="text"  id="tweet-text"></textarea>
@@ -77,6 +77,7 @@
       <div class="hidden">
       <a href="" class="scrollTop"><i class="fa-solid fa-angles-up"></i></a>
     </div>
+    <!--Only seperated ffrom the other JS script because instructions said to-->
       <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
       <script type="text/javascript" src="/scripts/composer.js"></script>
   </body>

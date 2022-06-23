@@ -1,4 +1,4 @@
-/*
+/* VARIABLE LIST*/ /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
@@ -44,14 +44,14 @@ div.hidden {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 90px;
-  width: 90px;
+  height: 80px;
+  width: 80px;
   background-color: #219EBC;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
   position: fixed;
   bottom: 25px;
   right: 25px;
-  border-radius: 35px;
+  border-radius: 15px;
 }
 
 .scrollTop:active {

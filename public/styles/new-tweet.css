@@ -1,3 +1,4 @@
+/* VARIABLE LIST*/
 section.new-tweet {
   margin-inline: 5px;
   margin-bottom: 15px;
@@ -6,7 +7,7 @@ section.new-tweet {
 
 #tweet-text {
   margin-top: 5px;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   border: 0;
   background-color: transparent;
@@ -22,7 +23,7 @@ section button.tweetButton {
   border: 2px solid;
   border-color: #8ECAE6;
   padding: 10px;
-  border-radius: 35px;
+  border-radius: 15px;
 }
 
 section button.tweetButton:hover {
@@ -60,10 +61,11 @@ section div.tweetText {
 div.alert {
   padding: 10px;
   background-color: rgba(201, 1, 1, 0.6901960784);
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   color: white;
   margin-top: 15px;
+  border-radius: 15px;
   display: none;
 }
 

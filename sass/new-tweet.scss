@@ -1,3 +1,5 @@
+@use 'variables';
+
 section.new-tweet {
   margin-inline: 5px;
   margin-bottom: 15px;
@@ -6,7 +8,7 @@ section.new-tweet {
 
 #tweet-text {
   margin-top: 5px;
-  font-family: 'Source Sans Pro';
+  font-family: variables.$normalFont;
   font-weight: 600;
   border: 0;
   background-color: transparent;
@@ -18,22 +20,22 @@ section.new-tweet {
 
 section button.tweetButton {
   color: white;
-  background-color: #219EBC;
+  background-color: variables.$interactableColour;
   border: 2px solid;
-  border-color: #8ECAE6;
+  border-color: variables.$highlightColour;
   padding: 10px;
-  border-radius: 35px;
+  border-radius: 15px;
 }
 section button.tweetButton:hover {
   color: white;
-  border-color: #8ECAE6;
-  box-shadow:  0.05em 0.1em 0.0 0 #8ECAE6;
+  border-color: variables.$highlightColour;
+  box-shadow:  0.05em 0.1em 0.0 0 variables.$highlightColour;
 }
 
 section button.tweetButton:active {
   color: white;
   border-color: #219EBC;
-  box-shadow:  0.05em 0.1em 0.2em 0 #8ECAE6;
+  box-shadow:  0.05em 0.1em 0.2em 0 variables.$highlightColour;
   transform: translateY(0.15em);
 }
 
@@ -41,7 +43,7 @@ section footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'Bungee', cursive;
+  font-family: variables.$bigFont;
 }
 
 section h2 {
@@ -59,10 +61,11 @@ section div.tweetText {
 div.alert {
   padding: 10px;
   background-color: #c90101b0; 
-  font-family: 'Source Sans Pro';
+  font-family: variables.$normalFont;
   font-weight: 600;
   color: white;
   margin-top: 15px;
+  border-radius: 15px;
   display: none;
 }
 
@@ -73,6 +76,6 @@ div.alert {
 }
 
 span.warning {
-  font-family: 'Bungee', cursive;
+  font-family: variables.$bigFont;
   padding: 1rem;
 }

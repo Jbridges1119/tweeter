@@ -4,6 +4,7 @@
  * Do not modify these two selectors, please
  */
 
+@use 'variables';
 
 html {
   box-sizing: border-box;
@@ -18,9 +19,9 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: variables.$background-colour;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: variables.$normalFont;
 
 }
 
@@ -47,14 +48,14 @@ display:none
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 90px;
-  width: 90px;
-  background-color: #219EBC;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  height: 80px;
+  width: 80px;
+  background-color: variables.$interactableColour;
+  background-image: variables.$background-texture;
   position: fixed;
   bottom: 25px;
   right: 25px;
-  border-radius: 35px;
+  border-radius: 15px;
 }
 
 .scrollTop:active {

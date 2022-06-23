@@ -1,3 +1,6 @@
+@use 'variables';
+
+
 header.display {
   height: 400px;
   width: 100%;
@@ -5,12 +8,12 @@ header.display {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffb703;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  background-color: variables.$bannerColour;
+  background-image: variables.$background-texture;
 }
 
 .name {
-  font-family: 'Source Sans Pro';
+  font-family: variables.$normalFont;
   font-weight: 300;
 }
 

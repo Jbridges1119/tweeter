@@ -1,3 +1,5 @@
+@use 'variables';
+
 nav {
   display:flex;
   justify-content: space-between;
@@ -16,7 +18,7 @@ nav {
 
 .navLogo {
   margin-left: 1.5em;
-  font-family: 'Bungee', cursive;
+  font-family: variables.$bigFont;
   font-size: 2em;
 }
 
@@ -29,7 +31,7 @@ nav div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Source Sans Pro';
+  font-family: variables.$normalFont;
   font-weight: 300;
   margin-right: 1.5em;
 }
@@ -39,12 +41,12 @@ nav div:active {
 }
 
 .navWrite {
-  font-family: 'Source Sans Pro';
+  font-family: variables.$normalFont;
   font-weight: 600;
 }
 
 .fa-angles-down {
-  color: orangered
+  color: #FB8500;
 }
 
 nav a:hover .fa-angles-down{
