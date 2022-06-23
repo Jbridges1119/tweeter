@@ -57,11 +57,14 @@ $(document).ready(function () {
   loadTweets()
 
   //WRITE A NEW TWEET BUTTON
-  $(".open").click(function (event) {
+  $(".open").click(function(event){
     event.preventDefault();
+    $("html").animate({ scrollTop: 0}, 'fast')
     $(`.new-tweet`).slideToggle(250)
     $('#tweet-text').focus()
+    
   })
+
 
   //SUBMIT NEW TWEET BUTTON
   $("form").submit(function (event) {
