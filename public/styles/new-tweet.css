@@ -1,6 +1,7 @@
 section.new-tweet {
   margin-inline: 5px;
   margin-bottom: 15px;
+  display:none
 }
 
 #tweet-text {

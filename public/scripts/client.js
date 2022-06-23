@@ -40,15 +40,17 @@ const escape = function (str) {
       $('#tweets-container').prepend(createTweetElement(person));
     });
   };
-  // $('.tweetText').prepend(`<div class="alert"><span class="warning">warning!</span>Must be less than 140 chars. Currently ${escape($(this).children('#tweet-text').val().length)}.</div>`)
-  const tooMuch =
+
 
   
   $(document).ready(function() {
 
-    // let $error = $('.new-tweet').prepend(`<div class="alert"><span class="warning">warning!</span>Must be less than 140 chars. Currently at ${escape($(this).children('#tweet-text').val().length)}.</div>`)
-      
-      
+
+    $(".open").click(function( event ) {
+      event.preventDefault();  
+      $(`.new-tweet`).slideToggle(250)
+    })
+
   $("form").submit(function( event ) {
     event.preventDefault();    
     $(`.alert`).slideUp(250)
@@ -83,4 +85,3 @@ const escape = function (str) {
     }
   loadTweets()
 });
-// $('.new-tweet').prepend(`<div class="alert"><span class="warning">warning!</span>Must be less than 140 chars. Currently at ${escape($(this).children('#tweet-text').val().length)}.</div>`)
