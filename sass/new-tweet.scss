@@ -1,12 +1,12 @@
 section.new-tweet {
   margin-inline: 5px;
   margin-bottom: 15px;
-  display: none;
+  display:none
 }
 
 #tweet-text {
   margin-top: 5px;
-  font-family: "Source Sans Pro";
+  font-family: 'Source Sans Pro';
   font-weight: 600;
   border: 0;
   background-color: transparent;
@@ -24,17 +24,16 @@ section button.tweetButton {
   padding: 10px;
   border-radius: 35px;
 }
-
 section button.tweetButton:hover {
   color: white;
   border-color: #8ECAE6;
-  box-shadow: 0.05em 0.1em 0 0 #8ECAE6;
+  box-shadow:  0.05em 0.1em 0.0 0 #8ECAE6;
 }
 
 section button.tweetButton:active {
   color: white;
   border-color: #219EBC;
-  box-shadow: 0.05em 0.1em 0.2em 0 #8ECAE6;
+  box-shadow:  0.05em 0.1em 0.2em 0 #8ECAE6;
   transform: translateY(0.15em);
 }
 
@@ -42,7 +41,7 @@ section footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
 }
 
 section h2 {
@@ -59,8 +58,8 @@ section div.tweetText {
 
 div.alert {
   padding: 10px;
-  background-color: rgba(201, 1, 1, 0.6901960784);
-  font-family: "Source Sans Pro";
+  background-color: #c90101b0; 
+  font-family: 'Source Sans Pro';
   font-weight: 600;
   color: white;
   margin-top: 15px;
@@ -74,6 +73,6 @@ div.alert {
 }
 
 span.warning {
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
   padding: 1rem;
 }

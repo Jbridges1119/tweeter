@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("html").animate({ scrollTop: 0}, 'fast');
   })
 
-//FADES IN/OUT SCROLLTOP BUTTONM
+//FADES IN/OUT SCROLLTOP BUTTON
   $(window).scroll(function(){
     if ($(this).scrollTop() > 80) {
         $('.hidden').fadeIn();
@@ -13,5 +13,4 @@ $(document).ready(function() {
         $('.hidden').fadeOut();
     }
 });
-
 });

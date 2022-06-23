@@ -1,20 +1,20 @@
 article.oldTweet {
-  margin-block: 29.88px;
+  margin-block:29.88px;
   border: solid;
   display: flex;
   flex-direction: column;
 }
 
 article.oldTweet:hover {
-  box-shadow: 0.15em 0.2em 0 0 #8ECAE6;
+  box-shadow: 0.15em 0.2em 0.0 0 #8ECAE6;
 }
 
 article.oldTweet header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 30px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin:30px;
 }
 
 article.oldTweet header div {
@@ -24,8 +24,8 @@ article.oldTweet header div {
   border: none;
 }
 
-article.oldTweet header div img {
-  padding-right: 1rem;
+article.oldTweet header div img{
+padding-right: 1rem
 }
 
 article.oldTweet div.tweet {
@@ -34,35 +34,35 @@ article.oldTweet div.tweet {
   margin-right: 10px;
   border-bottom: solid;
   margin-bottom: 0;
-  font-weight: 600;
-  font-size: 0.9em;
+  font-weight: 600 ;
+  font-size: .9em;
 }
 
 article.oldTweet div p {
   word-wrap: break-word;
-  width: 94%;
+  width:94%;
   margin-inline: 30px;
 }
 
 article.oldTweet footer {
   margin-inline: 40px;
-  font-size: small;
-  font-family: "Source Sans Pro";
-  font-weight: 600;
+ font-size: small;
+ font-family: 'Source Sans Pro';
+ font-weight: 600;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
 article.oldTweet footer div.icons {
   display: flex;
   flex-direction: row;
+  
 }
 
 article.oldTweet i {
   margin: 7px;
-  color: #219EBC;
+  color:#219EBC
 }
 
 article.oldTweet i:hover {
@@ -79,30 +79,35 @@ article.oldTweet .userID {
   color: #8ECAE6;
 }
 
+
 @media only screen and (min-width: 1024px) {
-  section.page {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 90%;
-    margin: auto;
-  }
-  header.display {
-    margin-top: 29.88px;
-    width: 90%;
-    max-width: 700px;
-    margin-right: 10%;
-  }
-  #tweet-containter {
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-  }
-  article.oldTweet div p {
-    word-wrap: anywhere;
-    width: 94%;
-    margin-inline: 30px;
-    min-width: 475px;
-  }
+section.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  width: 90%;
+  margin: auto;
+}
+
+header.display {
+margin-top: 29.88px;
+width: 90%;
+max-width:700px;
+margin-right: 10%;
+
+}
+
+#tweet-containter{
+  display: flex;
+  flex-direction:column;
+  max-width: 1000px;
+}
+
+article.oldTweet div p {
+  word-wrap: anywhere;
+  width:94%;
+  margin-inline: 30px;
+  min-width: 475px;
+}
 }

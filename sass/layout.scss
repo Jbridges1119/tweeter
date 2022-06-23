@@ -3,10 +3,11 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,11 +15,13 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 /*
@@ -33,14 +36,14 @@ main {
   margin: auto;
 }
 
-div.hidden {
-  display: none;
+div.hidden{
+display:none
 }
 
 .scrollTop {
   color: inherit;
   text-decoration: inherit;
-  display: flex;
+  display:flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -58,13 +61,17 @@ div.hidden {
   transform: translateY(0.15em);
 }
 
-.scrollTop:hover .fa-angles-up {
+.scrollTop:hover .fa-angles-up{
   animation: bounce-2 2s;
   animation-iteration-count: infinite;
 }
-
+  
 @keyframes bounce-2 {
-  0%, 25%, 50%, 75%, 100% {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -74,6 +81,7 @@ div.hidden {
     transform: translateY(-20px);
   }
 }
+
 .fa-angles-up {
   color: white;
   font-size: larger;

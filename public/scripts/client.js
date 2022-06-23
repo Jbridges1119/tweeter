@@ -63,13 +63,10 @@ $(document).ready(function () {
   //WRITE A NEW TWEET BUTTON
   $(".open").click(function(event){
     event.preventDefault();
-    
     $("html").animate({ scrollTop: 0}, 'fast')
     $(`.new-tweet`).slideToggle(250)
     $('#tweet-text').focus()
-    
   })
-
 
   //SUBMIT NEW TWEET BUTTON
   $("form").submit(function (event) {
@@ -97,6 +94,7 @@ $(document).ready(function () {
             success: function (res) {
               $('#tweets-container').prepend(createTweetElement(res[res.length - 1]));
               $('#tweet-text').val("")
+              $('output.counter').text(140 - $('#tweet-text').val().length).css('color', '#545149')
             }
           })
         })
