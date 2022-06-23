@@ -1,5 +1,5 @@
 article.oldTweet {
-  margin-block:40px;
+  margin-block:29.88px;
   border: solid;
   display: flex;
   flex-direction: column;
@@ -77,4 +77,46 @@ article.oldTweet i:active {
 article.oldTweet .userID {
   font-weight: 600;
   color: #8ECAE6;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+section.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  width: 90%;
+  margin: auto;
+}
+header.display {
+margin-top: 29.88px;
+width: 90%;
+max-width:700px;
+margin-right: 10%;
+
+}
+#tweet-containter{
+  display: flex;
+  flex-direction:column;
+  max-width: 1000px;
+  /* min-width:min-content; */
+
+}
+
+article.oldTweet div p {
+  word-wrap: anywhere;
+  width:94%;
+  margin-inline: 30px;
+  min-width: 475px;
+}
+
 }

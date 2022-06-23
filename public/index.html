@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
@@ -19,7 +22,7 @@
     <link rel="stylesheet" href="/styles/oldTweet.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
   </head>
@@ -35,6 +38,7 @@
     </div>
       </a>
     </nav>
+    <section class="page">
     <header class="display">
       <div>
           <img src="/images/profile-hex.png"> 
@@ -48,10 +52,7 @@
     <main class="container">
       <section class="new-tweet"> 
         <div class="tweetText">
-          <div class="alert">
-            <span class="warning">warning!</span>
-            <span class="alertspan"><!-- Error text fills here --></span>
-          </div>
+         
         <h2>What are you humming about?</h2>
         <form class="submit" action="/tweets" method="POST">
           <textarea name="text"  id="tweet-text"></textarea>
@@ -61,11 +62,18 @@
             <output name="counter" class="counter" for="tweet-text"><!-- Character counter fills here --></output>
           </footer>
         </form>
+        <div class="alert">
+          <div class="alert-text">
+            <span class="warning">warning!</span>
+            <span class="alertspan"><!-- Error text fills here --></span>
+          </div>
+        </div>
       </section>
       <section id="tweets-container">
         <!-- Tweet history fills here -->
       </section>
       </main>
+    </section>
       <div class="hidden">
       <a href="" class="scrollTop"><i class="fa-solid fa-angles-up"></i></a>
     </div>

@@ -21,8 +21,8 @@ section button.tweetButton {
   background-color: #219EBC;
   border: 2px solid;
   border-color: #8ECAE6;
-  padding: 5px;
-  
+  padding: 10px;
+  border-radius: 35px;
 }
 section button.tweetButton:hover {
   color: white;
@@ -58,15 +58,19 @@ section div.tweetText {
 
 
 div.alert {
-  padding: 20px;
+  padding: 10px;
   background-color: #c90101b0; 
   font-family: 'Source Sans Pro';
   font-weight: 600;
   color: white;
-  margin-bottom: 15px;
+  margin-top: 15px;
   display: none;
 }
-
+.alert .alert-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 span.warning {
   font-family: 'Bungee', cursive;
   padding: 1rem;

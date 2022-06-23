@@ -3,6 +3,8 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+
 html {
   box-sizing: border-box;
 }
@@ -33,9 +35,11 @@ main {
   width: 90%;
   margin: auto;
 }
+
 div.hidden{
 display:none
 }
+
 .scrollTop {
   color: inherit;
   text-decoration: inherit;
@@ -82,4 +86,3 @@ display:none
   color: white;
   font-size: larger;
 }
-

@@ -4,6 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+
 //FOR .HTML -- CHANGE .HTML TO .TEXT
 //CONVERTS TEXT INPUT INTO SAFE TEXT
 const escape = function (str) {
@@ -11,6 +12,7 @@ const escape = function (str) {
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+
 
 //CREATES TWEET USING INFO FROM AN OBJECT
 const createTweetElement = function (data) {
@@ -34,6 +36,7 @@ const createTweetElement = function (data) {
   return tweet;
 };
 
+
 //LOOPS THOUGH AN OBJECT AND FEEDS INFO TO CALLBACK - APPENDS DATA WITH CALLBACK RETURN
 const renderTweets = function (data) {
   data.forEach(person => {
@@ -42,8 +45,9 @@ const renderTweets = function (data) {
 };
 
 
+//LOADS WHEN INDEX.HTML IS READY
 $(document).ready(function () {
-  //LOADS TWEET HISTORY FROM /TWEETS
+  //LOADS TWEET HISTORY FROM "/TWEETS"
   const loadTweets = function() {
     $.ajax({
       url: '/tweets',
@@ -59,6 +63,7 @@ $(document).ready(function () {
   //WRITE A NEW TWEET BUTTON
   $(".open").click(function(event){
     event.preventDefault();
+    
     $("html").animate({ scrollTop: 0}, 'fast')
     $(`.new-tweet`).slideToggle(250)
     $('#tweet-text').focus()
@@ -69,16 +74,17 @@ $(document).ready(function () {
   //SUBMIT NEW TWEET BUTTON
   $("form").submit(function (event) {
     event.preventDefault();
-    $(`.alert`).slideUp(250)
-
+    $(`.alert`).slideUp(75)
     if ($(this).children('#tweet-text').val().length > 140) {
+      $(".counter").effect( "bounce", {times:3, distance: 25}, 400 );
       $(`.alertspan`).text(`Character count cannot be over 140. Currently at ${escape($(this).children('#tweet-text').val().length)}.`)
-      $(`.alert`).slideDown(250)
+      $(`.alert`).slideDown(350)
     }
 
     else if (!$(this).children('#tweet-text').val().length) {
+      $(".counter").effect( "bounce", {times:3, distance: 25}, 400 );
       $(`.alertspan`).text('Tweet cannot be empty.')
-      $(`.alert`).slideDown(250)
+      $(`.alert`).slideDown(350)
     }
 
     else {

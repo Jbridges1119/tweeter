@@ -1,8 +1,12 @@
 $(document).ready(function() {
-  //SETS CHARACTER COUNTER TO NUMBER ON PAGE REFRESH
+  //SETS CHARACTER COUNTER TO NUMBER/COLOUR ON PAGE REFRESH WITH TEXT ALREADY PRESENT
   const loadCount = function() {
     const $length = $('#tweet-text').val().length;
-    $('output.counter').text(140 - $length)
+    if ($length < 141) {
+      $('output.counter').text(140 - $length).css('color', '#545149');
+    } else {
+      $('output.counter').text(140 - $length).css('color', 'red');
+    }
   }
   loadCount()
   //UPDATES CHARACTER COUNTER IN REAL TIME
