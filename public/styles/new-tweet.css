@@ -5,30 +5,32 @@ section.new-tweet {
 }
 
 #tweet-text {
+  margin-top: 5px;
   font-family: 'Source Sans Pro';
   font-weight: 600;
   border: 0;
   background-color: transparent;
   width: 100%;
+  padding-bottom: 0;
   resize: none;
   outline: none;
 }
 
-section button {
+section button.tweetButton {
   color: white;
   background-color: #219EBC;
   border: 2px solid;
   border-color: #8ECAE6;
-  padding: 5px
+  padding: 5px;
   
 }
-section button:hover {
+section button.tweetButton:hover {
   color: white;
   border-color: #8ECAE6;
   box-shadow:  0.05em 0.1em 0.0 0 #8ECAE6;
 }
 
-section button:active {
+section button.tweetButton:active {
   color: white;
   border-color: #219EBC;
   box-shadow:  0.05em 0.1em 0.2em 0 #8ECAE6;
@@ -67,5 +69,5 @@ div.alert {
 
 span.warning {
   font-family: 'Bungee', cursive;
-  padding: 1rem
+  padding: 1rem;
 }

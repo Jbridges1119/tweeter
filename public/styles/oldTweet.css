@@ -29,7 +29,6 @@ padding-right: 1rem
 }
 
 article.oldTweet div.tweet {
-  word-wrap: break-word;
   display: flex;
   margin-left: 10px;
   margin-right: 10px;
@@ -41,9 +40,8 @@ article.oldTweet div.tweet {
 
 article.oldTweet div p {
   word-wrap: break-word;
+  width:94%;
   margin-inline: 30px;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 article.oldTweet footer {

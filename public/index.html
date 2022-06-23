@@ -35,7 +35,6 @@
     </div>
       </a>
     </nav>
-
     <header class="display">
       <div>
           <img src="/images/profile-hex.png"> 
@@ -45,31 +44,27 @@
           <h2 class="fullName">Your <span class="name">Name</span></h2>
       </div>
   </header>
-  
-
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet"> 
-        
         <div class="tweetText">
-          <div class="alert"><span class="warning">warning!</span><span class="alertspan"></span></div>
+          <div class="alert">
+            <span class="warning">warning!</span>
+            <span class="alertspan"><!-- Error text fills here --></span>
+          </div>
         <h2>What are you humming about?</h2>
         <form class="submit" action="/tweets" method="POST">
           <textarea name="text"  id="tweet-text"></textarea>
         </div>
-          
           <footer>
-            <button class="tweetButton" id="tweetButton" submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <button class="tweetButton" submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text"><!-- Character counter fills here --></output>
           </footer>
         </form>
       </section>
-  
-
       <section id="tweets-container">
+        <!-- Tweet history fills here -->
       </section>
-      
-
       </main>
       <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </body>
