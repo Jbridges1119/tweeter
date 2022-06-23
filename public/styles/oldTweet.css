@@ -28,7 +28,8 @@ article.oldTweet header div img{
 padding-right: 1rem
 }
 
-article.oldTweet div.tweetText {
+article.oldTweet div.tweet {
+  word-wrap: break-word;
   display: flex;
   margin-left: 10px;
   margin-right: 10px;

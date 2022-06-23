@@ -54,13 +54,14 @@ section div.tweetText {
 }
 
 
-div .alert {
+div.alert {
   padding: 20px;
   background-color: #c90101b0; 
   font-family: 'Source Sans Pro';
   font-weight: 600;
   color: white;
   margin-bottom: 15px;
+  display: none;
 }
 
 span.warning {

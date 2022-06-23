@@ -19,7 +19,7 @@ const escape = function (str) {
     <div class="user"><img src="${escape(data.user.avatars)}">${escape(data.user.name)}</div>
     <div class="userID">${escape(data.user.handle)}</div>
   </header>
-  <div class="tweetText">
+  <div class="tweet">
     <p>${escape(data.content.text)}</p>
   </div>
   <footer>
@@ -40,21 +40,24 @@ const escape = function (str) {
       $('#tweets-container').prepend(createTweetElement(person));
     });
   };
-
-
-
-
+  // $('.tweetText').prepend(`<div class="alert"><span class="warning">warning!</span>Must be less than 140 chars. Currently ${escape($(this).children('#tweet-text').val().length)}.</div>`)
+  const tooMuch =
 
   
   $(document).ready(function() {
-  
-  $("form").submit(function( event ) {
-    event.preventDefault();
 
+    // let $error = $('.new-tweet').prepend(`<div class="alert"><span class="warning">warning!</span>Must be less than 140 chars. Currently at ${escape($(this).children('#tweet-text').val().length)}.</div>`)
+      
+      
+  $("form").submit(function( event ) {
+    event.preventDefault();    
+    $(`.alert`).slideUp(250)
     if($(this).children('#tweet-text').val().length > 140){
-      alert("Tweet muse be under 140 characters")
+      $(`.alertspan`).text(`Character count over 140. Currently at ${escape($(this).children('#tweet-text').val().length)}.`)
+      $(`.alert`).slideDown(250)
     } else if (!$(this).children('#tweet-text').val().length) {
-      alert("Please add text to your tweet")
+      $(`.alertspan`).text('Tweet cannot be empty.')
+      $(`.alert`).slideDown(250)
     } else {
       $.post("/tweets", $(this).serialize())
       .then(() => {$.ajax({
@@ -79,5 +82,5 @@ const escape = function (str) {
       });
     }
   loadTweets()
-
 });
+// $('.new-tweet').prepend(`<div class="alert"><span class="warning">warning!</span>Must be less than 140 chars. Currently at ${escape($(this).children('#tweet-text').val().length)}.</div>`)
