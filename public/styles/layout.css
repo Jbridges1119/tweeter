@@ -33,3 +33,53 @@ main {
   width: 90%;
   margin: auto;
 }
+div.hidden{
+display:none
+}
+.scrollTop {
+  color: inherit;
+  text-decoration: inherit;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  background-color: #219EBC;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 35px;
+}
+
+.scrollTop:active {
+  transform: translateY(0.15em);
+}
+
+.scrollTop:hover .fa-angles-up{
+  animation: bounce-2 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce-2 {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-12px);
+    }
+    60% {
+      transform: translateY(-20px);
+    }
+  }
+
+.fa-angles-up {
+  color: white;
+  font-size: larger;
+}
+

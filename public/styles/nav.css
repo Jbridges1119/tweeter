@@ -39,10 +39,10 @@ nav div:active {
   font-weight: 600;
 }
 
-.fa-solid {
+.fa-angles-down {
   color: orangered
 }
-nav a:hover .fa-solid{
+nav a:hover .fa-angles-down{
     animation: bounce 2s;
     animation-iteration-count: infinite;
   }
