@@ -82,6 +82,9 @@ $(document).ready(function() {
           loadTweets();
           $('#tweet-text').val("");
           $('output.counter').text(140 - $('#tweet-text').val().length).css('color', '#545149');
+        })
+        .catch((error) => {
+          console.error(error);
         });
     }
   });
