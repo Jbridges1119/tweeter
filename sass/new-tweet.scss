@@ -3,7 +3,7 @@
 section.new-tweet {
   margin-inline: 5px;
   margin-bottom: 15px;
-  display:none
+  display: none
 }
 
 #tweet-text {
@@ -26,16 +26,17 @@ section button.tweetButton {
   padding: 10px;
   border-radius: 15px;
 }
+
 section button.tweetButton:hover {
   color: white;
   border-color: variables.$highlightColour;
-  box-shadow:  0.05em 0.1em 0.0 0 variables.$highlightColour;
+  box-shadow: 0.05em 0.1em 0.0 0 variables.$highlightColour;
 }
 
 section button.tweetButton:active {
   color: white;
   border-color: #219EBC;
-  box-shadow:  0.05em 0.1em 0.2em 0 variables.$highlightColour;
+  box-shadow: 0.05em 0.1em 0.2em 0 variables.$highlightColour;
   transform: translateY(0.15em);
 }
 
@@ -60,7 +61,7 @@ section div.tweetText {
 
 div.alert {
   padding: 10px;
-  background-color: #c90101b0; 
+  background-color: #c90101b0;
   font-family: variables.$normalFont;
   font-weight: 600;
   color: white;

@@ -2,7 +2,7 @@
 
 
 article.oldTweet {
-  margin-block:29.88px;
+  margin-block: 29.88px;
   border: solid;
   border-radius: 15px;
   display: flex;
@@ -14,11 +14,11 @@ article.oldTweet:hover {
 }
 
 article.oldTweet header {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-margin:30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
 }
 
 article.oldTweet header div {
@@ -28,8 +28,8 @@ article.oldTweet header div {
   border: none;
 }
 
-article.oldTweet header div img{
-padding-right: 1rem
+article.oldTweet header div img {
+  padding-right: 1rem
 }
 
 article.oldTweet div.tweet {
@@ -38,13 +38,13 @@ article.oldTweet div.tweet {
   margin-right: 10px;
   border-bottom: solid;
   margin-bottom: 0;
-  font-weight: 600 ;
+  font-weight: 600;
   font-size: .9em;
 }
 
 article.oldTweet div p {
   word-wrap: break-word;
-  width:94%;
+  width: 94%;
   margin-inline: 30px;
 }
 
@@ -58,6 +58,7 @@ article.oldTweet footer {
   justify-content: space-between;
   align-items: center;
 }
+
 article.oldTweet footer div.icons {
   display: flex;
   flex-direction: row;
@@ -84,33 +85,33 @@ article.oldTweet .userID {
 
 
 @media only screen and (min-width: 1024px) {
-section.page {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items:flex-start;
-  width: 90%;
-  margin: auto;
-}
+  section.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+  }
 
-header.display {
-  margin-top: 29.88px;
-  width: 90%;
-  max-width:700px;
-  margin-right: 10%;
-  border-radius: 15px;
-}
+  header.display {
+    margin-top: 29.88px;
+    width: 90%;
+    max-width: 700px;
+    margin-right: 10%;
+    border-radius: 15px;
+  }
 
-#tweet-containter{
-  display: flex;
-  flex-direction:column;
-  max-width: 1000px;
-}
+  #tweet-containter {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+  }
 
-article.oldTweet div p {
-  word-wrap: anywhere;
-  width:94%;
-  margin-inline: 30px;
-  min-width: 475px;
-}
+  article.oldTweet div p {
+    word-wrap: anywhere;
+    width: 94%;
+    margin-inline: 30px;
+    min-width: 475px;
+  }
 }

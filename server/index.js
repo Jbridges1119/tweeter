@@ -6,7 +6,7 @@ const PORT          = 8080;
 const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
-var morgan = require('morgan')
+const morgan         = require('morgan');
 
 
 app.use(bodyParser.urlencoded({ extended: true }));

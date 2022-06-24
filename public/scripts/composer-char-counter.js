@@ -7,8 +7,8 @@ $(document).ready(function() {
     } else {
       $('output.counter').text(140 - $length).css('color', 'red');
     }
-  }
-  loadCount()
+  };
+  loadCount();
   //UPDATES CHARACTER COUNTER IN REAL TIME
   $('#tweet-text').on('input', function() {
     const $length = $('#tweet-text').val().length;

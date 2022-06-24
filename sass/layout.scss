@@ -9,7 +9,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -37,14 +40,14 @@ main {
   margin: auto;
 }
 
-div.hidden{
-display:none
+div.hidden {
+  display: none
 }
 
 .scrollTop {
   color: inherit;
   text-decoration: inherit;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -62,12 +65,13 @@ display:none
   transform: translateY(0.15em);
 }
 
-.scrollTop:hover .fa-angles-up{
+.scrollTop:hover .fa-angles-up {
   animation: bounce-2 2s;
   animation-iteration-count: infinite;
 }
-  
+
 @keyframes bounce-2 {
+
   0%,
   25%,
   50%,
@@ -75,9 +79,11 @@ display:none
   100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-12px);
   }
+
   60% {
     transform: translateY(-20px);
   }
