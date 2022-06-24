@@ -79,16 +79,9 @@ $(document).ready(function() {
     } else {
       $.post("/tweets", $(this).serialize())
         .then(() => {
-          $.ajax({
-            url: '/tweets',
-            type: 'GET',
-            dataType: 'json',
-            success: function(res) {
-              $('#tweets-container').prepend(createTweetElement(res[res.length - 1]));
-              $('#tweet-text').val("");
-              $('output.counter').text(140 - $('#tweet-text').val().length).css('color', '#545149');
-            }
-          });
+          loadTweets();
+          $('#tweet-text').val("");
+          $('output.counter').text(140 - $('#tweet-text').val().length).css('color', '#545149');
         });
     }
   });
