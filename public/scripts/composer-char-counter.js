@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  //SETS CHARACTER COUNTER TO NUMBER/COLOUR ON PAGE REFRESH WITH TEXT ALREADY PRESENT
+  //SET CHARACTER COUNTER TO NUMBER/COLOUR ON PAGE REFRESH WITH TEXT ALREADY PRESENT
   const loadCount = function() {
     const $length = $('#tweet-text').val().length;
     if ($length < 141) {
@@ -9,7 +9,7 @@ $(document).ready(function() {
     }
   };
   loadCount();
-  //UPDATES CHARACTER COUNTER IN REAL TIME
+  //UPDATE CHARACTER COUNTER IN REAL TIME
   $('#tweet-text').on('input', function() {
     const $length = $('#tweet-text').val().length;
     if ($length < 141) {

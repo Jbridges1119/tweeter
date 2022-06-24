@@ -56,7 +56,7 @@ $(document).ready(function() {
   };
   loadTweets();
 
-  //WRITE A NEW TWEET BUTTON
+  //`WRITE A NEW TWEET` BUTTON
   $(".open").click(function(event) {
     event.preventDefault();
     $("html").animate({ scrollTop: 0}, 'fast');
@@ -64,7 +64,7 @@ $(document).ready(function() {
     $('#tweet-text').focus();
   });
 
-  //SUBMIT NEW TWEET BUTTON -- IF OVER 140 OF EMPTY - THROW ERROR MESSAGE
+  //SUBMIT NEW TWEET BUTTON -- IF OVER 140 OR EMPTY - THROW ERROR MESSAGE
   $("form").submit(function(event) {
     event.preventDefault();
     $(`.alert`).slideUp(75);
