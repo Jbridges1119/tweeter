@@ -15,8 +15,7 @@ const toTop = function(event) {
 //FADES IN/OUT SCROLLTOP BUTTON
 const toTopFade = function() {
   if ($(this).scrollTop() > 80) {
-    $('.hidden').fadeIn();
-  } else {
-    $('.hidden').fadeOut();
+    return $('.hidden').fadeIn();
   }
+  return $('.hidden').fadeOut();
 };

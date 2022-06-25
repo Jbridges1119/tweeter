@@ -62,6 +62,9 @@ const renderTweets = function(data) {
 const loadTweets = function() {
   $.getJSON('/tweets', function(res) {
     renderTweets(res);
+  })
+  .fail(() => {
+    console.error("Ajax .get Error");
   });
 };
 
@@ -73,6 +76,7 @@ const tweetSlideButton = function(event) {
   $('#tweet-text').focus();
 };
 
+//SUBMIT NEW TWEET BUTTON -- IF OVER 140 OR EMPTY - THROW ERROR MESSAGE
 const submitNewTweet = function(event) {
   event.preventDefault();
   $(`.alert`).slideUp(75);
@@ -86,21 +90,14 @@ const submitNewTweet = function(event) {
     $(`.alert`).slideDown(350);
   } else {
     $.post("/tweets", $(this).serialize())
+    .fail(() => {
+      console.error("Ajax .post Error");
+    })
       .then(() => {
-      //   // loadTweets();
-      //   // $('#tweet-text').val("");
-      //   // $('output.counter').text(140 - $('#tweet-text').val().length).css('color', '#545149');
-        $.getJSON('/tweets', function(res) {
-          $('#tweets-container').prepend(createTweetElement(res[res.length - 1 ]));
-          $('#tweet-text').val("");
-          $('output.counter').text(140 - $('#tweet-text').val().length).css('color', '#545149');
-        });
-      })
-      .catch((error) => {
-        console.error(error);
+        loadTweets();
+        $('#tweet-text').val("");
+        $('output.counter').text(140 - $('#tweet-text').val().length).css('color', '#545149');
       });
   }
 };
-
-
 
