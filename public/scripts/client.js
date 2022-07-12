@@ -84,6 +84,7 @@ const submitNewTweet = function(event) {
     $(".counter").effect("bounce", {times:3, distance: 25}, 400);
     $(`.alertspan`).text(`Character count cannot be over 140. Currently at ${$(this).children('#tweet-text').val().length}.`);
     $(`.alert`).slideDown(350);
+    console.log('working')
   } else if (!$(this).children('#tweet-text').val().length) {
     $(".counter").effect("bounce", {times:3, distance: 25}, 400);
     $(`.alertspan`).text('Tweet cannot be empty.');
