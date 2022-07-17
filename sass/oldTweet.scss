@@ -86,6 +86,7 @@ article.oldTweet .userID {
 
 @media only screen and (min-width: 1024px) {
   section.page {
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,6 +96,7 @@ article.oldTweet .userID {
   }
 
   header.display {
+    
     margin-top: 29.88px;
     width: 90%;
     max-width: 700px;
@@ -103,6 +105,7 @@ article.oldTweet .userID {
   }
 
   #tweet-containter {
+    
     display: flex;
     flex-direction: column;
     max-width: 1000px;
@@ -115,3 +118,4 @@ article.oldTweet .userID {
     min-width: 475px;
   }
 }
+

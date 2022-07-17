@@ -5,7 +5,7 @@ nav {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  height: 100px;
+  height: 90px;
   background-color: #219EBC;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
   color: #FFFFFF;
@@ -75,3 +75,9 @@ nav a {
     transform: translateY(12px);
   }
 }
+
+@media only screen and (max-width: 497px) {
+  .aNew {
+    display:none
+  }
+  }
